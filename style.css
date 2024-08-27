@@ -1,0 +1,75 @@
+:root{
+    --color-Light-Green: hsl(148, 38%, 91%);
+    --color-Green: hsl(169, 82%, 27%);
+    --color-Red: hsl(0, 66%, 56%);
+
+    --color-White: hsl(0, 0%, 100%);
+    --color-Medium-Grey: hsl(186, 15%, 59%);
+    --color-Dark-Grey: hsl(187, 24%, 22%);
+}
+
+body{
+    height: max(100vh, 1020px);
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--color-Light-Green);
+    
+    color: var(--clr-Dark-Grey);
+}
+
+.container {
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: min(740px, 95%);
+    height: auto;
+    padding: 35px;
+    background-color: var(--color-White);
+    margin: auto;
+    border-radius: 20px;
+}
+
+.row{
+    display: flex;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+.two-col{
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+    .two-col > *{
+        flex-grow: 1;
+    }
+
+input, textarea, .box{
+    height: 2rem;
+    margin-bottom: 30px;
+    border: 1px solid var(--color-Medium-Grey);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+    textarea{
+        height: 4rem;
+    }
+
+button{
+    border: none;
+    width: 100%;
+    background-color: var(--color-Green);
+    color: var(--color-White);
+    font-weight: 400px;
+    line-height: 4;
+    border-radius: 6px;
+}

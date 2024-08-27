@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style.css" class="css">
+</head>
+<body>
+    <main class="container" >
+        <div class="card">
+          <form action="submit">
+            <h1>Contact Us</h1>
+    
+            <div class="row two-col">
+              <label for="first-name"><span class='text'> First Name</span>
+                <input type="text" id="first-name" required>
+                <!-- <span class="errormsg" id="first-name-error">This field is required</span> -->
+              </label>
+              <label for="last-name"><span class='text'>Last Name</span>
+                <input type="text" id="last-name" required>
+                <!-- <span class="errormsg" id="last-name-error">This field is required</span> -->
+              </label>
+            </div>
+    
+            <label for="email"><span class='text'>Email Address</span>
+              <input type="email" name="email" id="email" required>
+              <!-- <span class="errormsg" id="email-error">Please enter a valid email address</span> -->
+            </label>
+    
+            <label for="type"><span class='text'>Query Type</span>
+              <div class="row two-col">
+                <span class="box radio-container">
+                  <input type="radio" name="radio" id="general">
+                  <span class="radiotext">General Enquiry</span>
+                </span>
+                <span class="box radio-container">
+                  <input type="radio" name="radio" id="support">
+                  <span class="radiotext">Support Request</span>
+                </span>
+              </div>
+              <!-- <span class="errormsg" id="radio-error">Please select a query type</span> -->
+            </label>
+    
+            <label for="message"><span class='text'>Message</span>
+              <textarea name="message" id="message" required></textarea>
+              <!-- <span class="errormsg">This field is required</span> -->
+            </label>
+          
+            <label for="check">
+              <div class="row">
+                <input type="checkbox" name="check" id="check"><span class="labelcheckbox"></span>
+                <span class='text'>I consent to being contacted by the team</span>
+              </div>          
+              <!-- <span class="errormsg" id="check-error">To submit this form, please consent to being contacted</span> -->
+            </label>
+    
+            <button type="submit" >Submit</button>
+    
+            <!-- <div class="success-msg">
+              <div class="row">
+                <img src="./assets/images/icon-success-check.svg" alt="">
+                <h3>Message Sent!</h3>
+              </div>
+              <p>Thanks for completing the form. We'll be in touch soon!</p>
+            </div> -->
+          </form>
+        </div>
+      </main>
+      
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/MIGHTYJNR">Odusanya Ibrahim O.</a>.
+      </div>
+</body>
+</html>
